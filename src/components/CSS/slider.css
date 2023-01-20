@@ -7,7 +7,7 @@
 
 .container-items{
     display: flex;
-    width: 64%;
+    width: 72%;
     align-items: center;
     justify-content: space-evenly;
 }
