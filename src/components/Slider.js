@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/ProFlight.png";
+import arrow from "../assets/arrow.png";
 import "./CSS/slider.css"
 
 
@@ -13,7 +14,6 @@ function Slider() {
     ]
 
     const [selectedItemId, setSelectedItemId] = useState(1)
-
 
     const handleNext = () => {
         let newSelectedItemId
@@ -41,7 +41,7 @@ function Slider() {
 
     return (
         <div className="container-slider">
-            <button onClick={handlePrev} className="btn" id='prev'> Prev </button>
+            <button onClick={handlePrev} className="btn" id='prev'> <img src={arrow} className="arrow-left" alt="arrow"/> </button>
 
             <div className="container-items">
                 {data.map((item) => (
@@ -55,7 +55,7 @@ function Slider() {
                 ))}
             </div>
             
-            <button onClick={handleNext} className="btn" id='next'> Next </button>
+            <button onClick={handleNext} className="btn" id='next'> <img src={arrow} alt="arrow"/> </button>
         </div>
     );
 }

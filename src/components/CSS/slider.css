@@ -36,3 +36,7 @@
     border: none;
     cursor: pointer;
 }
+
+.arrow-left{
+    transform: rotate(180deg);
+}
